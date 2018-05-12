@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Example
 //
-//  Created by Simon Riis Olesen on 10/05/2018.
+//  Created by Simon Riis Olesen on 12/05/2018.
 //  Copyright © 2018 SwiftyPaylike. All rights reserved.
 //
 

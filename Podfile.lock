@@ -1,0 +1,16 @@
+PODS:
+  - URLSessionWrapper (0.0.2)
+
+DEPENDENCIES:
+  - URLSessionWrapper
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - URLSessionWrapper
+
+SPEC CHECKSUMS:
+  URLSessionWrapper: 1f920ee85318ecccd271db29c634465f9e611a11
+
+PODFILE CHECKSUM: 9d4e38bb54cb8e893bd0b4f3ef1385b6a820b2ea
+
+COCOAPODS: 1.5.2

@@ -1,0 +1,6 @@
+framework module URLSessionWrapper {
+  umbrella header "URLSessionWrapper-umbrella.h"
+
+  export *
+  module * { export * }
+}

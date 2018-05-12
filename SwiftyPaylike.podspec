@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 
   s.name         = "SwiftyPaylike"
   s.version      = "0.0.1"
-  s.summary      = "Simple Swift wrapper for the Paylike Gateway API"
+  s.summary      = "Swift wrapper for the Paylike Gateway API"
 
   s.description  = <<-DESC
   Simple Swift wrapper for the Paylike Gateway API
@@ -25,8 +25,12 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/SimonRiis/SwiftyPaylike.git", :tag => "#{s.version}" }
 
+  s.dependency "URLSessionWrapper"
 
   s.source_files  = "SwiftyPaylike/SwiftyPaylike/*.swift"
-
+  s.source_files  = "SwiftyPaylike/SwiftyPaylike/*.swift"
+  s.source_files  = 'SwiftyPaylike/SwiftyPaylike/**/*.{h,m,swift}'
+  s.source_files  = 'SwiftyPaylike/**/**/*.{h,m,swift}'
+  s.swift_version = '4.1'
 
 end

@@ -1,0 +1,6 @@
+framework module Pods_SwiftyPaylikeTests {
+  umbrella header "Pods-SwiftyPaylikeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
