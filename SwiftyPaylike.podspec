@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "SwiftyPaylike"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Swift wrapper for the Paylike Gateway API"
 
   s.description  = <<-DESC
@@ -27,10 +27,13 @@ Pod::Spec.new do |s|
 
   s.dependency "URLSessionWrapper"
 
-  s.source_files  = "SwiftyPaylike/SwiftyPaylike/*.swift"
-  s.source_files  = "SwiftyPaylike/SwiftyPaylike/*.swift"
-  s.source_files  = 'SwiftyPaylike/SwiftyPaylike/**/*.{h,m,swift}'
-  s.source_files  = 'SwiftyPaylike/**/**/*.{h,m,swift}'
+  # s.source_files  = "SwiftyPaylike/SwiftyPaylike/*.swift"
+  # s.source_files  = "SwiftyPaylike/SwiftyPaylike/*.swift"
+  s.source_files  = 'SwiftyPaylike/**/**/Handlers/*.{h,m,swift}'
+  s.source_files  = 'SwiftyPaylike/**/**/Models/*.{h,m,swift}'
+  s.source_files  = 'SwiftyPaylike/**/**/Protocols/*.{h,m,swift}'
+  s.source_files  = 'SwiftyPaylike/**/**/**/*.{swift}'
+  # s.source_files  = 'SwiftyPaylike/**/**/**/*.{h,m,swift}'
   s.swift_version = '4.1'
 
 end
