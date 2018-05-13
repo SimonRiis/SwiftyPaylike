@@ -25,7 +25,7 @@ class SwiftyPaylikeTests: XCTestCase {
         
         let handler = PaylikeHandler(paylikePublicKey: "")
         
-        let card = Card(cardNumber: "4100000000000", cardExpiryMonth: 05, cardExpiryYear: 22, cardCode: 123)
+        let card = Card(cardNumber: "4100000000000000", cardExpiryMonth: 05, cardExpiryYear: 22, cardCode: 123)
         
         let cardPayment = CardPayment(currency: "DKK", amount: 1000, card: card)
         
@@ -36,12 +36,6 @@ class SwiftyPaylikeTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+   
     
 }

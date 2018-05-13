@@ -23,16 +23,16 @@ public class Card:Encoding{
     
     public func encode() -> Data {
         var data = Data()
-        if let cardNumber = ("&cardNumber="+cardNumber).data(using: String.Encoding.utf8){
+        if let cardNumber = ("&card[number]="+cardNumber).data(using: String.Encoding.utf8){
             data.append(cardNumber)
         }
-        if let cardExpiryMonth = ("&cardExpiryMonth="+String(cardExpiryMonth)).data(using: String.Encoding.utf8){
+        if let cardExpiryMonth = ("&card[expiry][month]="+String(cardExpiryMonth)).data(using: String.Encoding.utf8){
             data.append(cardExpiryMonth)
         }
-        if let cardExpiryYear = ("&cardExpiryYear="+String(cardExpiryYear)).data(using: String.Encoding.utf8){
+        if let cardExpiryYear = ("&card[expiry][year]="+String(cardExpiryYear)).data(using: String.Encoding.utf8){
             data.append(cardExpiryYear)
         }
-        if let cardCode = ("&cardCode="+String(cardCode)).data(using: String.Encoding.utf8){
+        if let cardCode = ("&card[code]="+String(cardCode)).data(using: String.Encoding.utf8){
             data.append(cardCode)
         }
         
