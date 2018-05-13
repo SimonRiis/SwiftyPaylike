@@ -6,7 +6,7 @@ A very simple wrapper for the Paylike Gateway API
 https://cocoapods.org/pods/SwiftyPaylike
 
 Add to PodFile:
-$ pod 'SwiftyPaylike'
+pod 'SwiftyPaylike'
 
 Run pod install:
 $ pod install
